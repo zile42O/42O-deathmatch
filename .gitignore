@@ -1,0 +1,7 @@
+/*.log
+/*.exe
+/*.dll
+/*.so
+/*.txt
+/gamemodes/*.amx
+/scriptfiles
