@@ -1,0 +1,407 @@
+[Wed Sep 16 03:38:36 2020] [WARNING] mysql_connect_file: no password specified (modules/mysql/connect.pwn:5 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:38:36 2020] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[Wed Sep 16 03:38:36 2020] [DEBUG] mysql_errno(1) (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:38:36 2020] [DEBUG] CHandle::GetErrorId(this=0x71e118)
+[Wed Sep 16 03:38:36 2020] [DEBUG] CConnection::GetError(this=0x68dbb8, connection=0x722c18)
+[Wed Sep 16 03:38:36 2020] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[Wed Sep 16 03:38:36 2020] [DEBUG] mysql_errno: return value: '0' (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:38:54 2020] [DEBUG] mysql_format(1, 0x047BE1E4, 128, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:38:54 2020] [DEBUG] mysql_format: return value: '48' (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:38:54 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_OnPlayerAccountExists", "i") (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:38:54 2020] [DEBUG] CCallback::Create(amx=0x33e25b8, name='sql_OnPlayerAccountExists', format='i', params=0x47be1cc, param_offset=5)
+[Wed Sep 16 03:38:54 2020] [DEBUG] CCallback::Create - callback index for 'sql_OnPlayerAccountExists': 130
+[Wed Sep 16 03:38:54 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:38:54 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:38:54 2020] [INFO] Callback 'sql_OnPlayerAccountExists' set up for delayed execution.
+[Wed Sep 16 03:38:54 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:38:54 2020] [DEBUG] CHandle::Execute(this=0x71e118, type=1, query=0x6f4318)
+[Wed Sep 16 03:38:54 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:38:54 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:38:54 2020] [DEBUG] CConnection::Execute(query=0x6f4318, this=0x4a00020, connection=0x72d6e8)
+[Wed Sep 16 03:38:54 2020] [DEBUG] CQuery::Execute(this=0x6f4318, connection=0x72d6e8)
+[Wed Sep 16 03:38:54 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.805 milliseconds
+[Wed Sep 16 03:38:54 2020] [DEBUG] CResultSet::Create(connection=0x72d6e8, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:38:54 2020] [DEBUG] created new resultset '0x720820'
+[Wed Sep 16 03:38:54 2020] [DEBUG] fetched MySQL result '0x68b2d8'
+[Wed Sep 16 03:38:54 2020] [DEBUG] allocated 0 bytes for PAWN result
+[Wed Sep 16 03:38:54 2020] [DEBUG] CCallback::Execute(amx=0x33e25b8, index=130, num_params=1)
+[Wed Sep 16 03:38:54 2020] [INFO] Executing callback 'sql_OnPlayerAccountExists' with 1 parameter...
+[Wed Sep 16 03:38:54 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:38:54 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:38:54 2020] [DEBUG] executing AMX callback with index '130'
+[Wed Sep 16 03:38:54 2020] [DEBUG] cache_get_row_count(0x047BE5EC) (modules/account/dbfunctions.pwn:22)
+[Wed Sep 16 03:38:54 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:22)
+[Wed Sep 16 03:38:54 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:38:54 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_format(1, 0x047BE1C0, 256, "INSERT INTO `users` (`password`, `username`) VALUES ('%s', '%s')") (modules/account/hook.pwn:68 -> E:\SAMP dev\compiler\bin\include\fixes.inc:10099)
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_format: return value: '131' (modules/account/hook.pwn:68 -> E:\SAMP dev\compiler\bin\include\fixes.inc:10099)
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_tquery(1, "INSERT INTO `users` (`password`, `username`) VALUES ('9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', 'zile42O')", "sql_OnAccountCreate", "i") (modules/account/hook.pwn:69 -> E:\SAMP dev\compiler\bin\include\fixes.inc:10099)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CCallback::Create(amx=0x33e25b8, name='sql_OnAccountCreate', format='i', params=0x47be1a8, param_offset=5)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CCallback::Create - callback index for 'sql_OnAccountCreate': 129
+[Wed Sep 16 03:39:05 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:39:05 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:39:05 2020] [INFO] Callback 'sql_OnAccountCreate' set up for delayed execution.
+[Wed Sep 16 03:39:05 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:39:05 2020] [DEBUG] CHandle::Execute(this=0x71e118, type=1, query=0x74ef78)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/hook.pwn:69 -> E:\SAMP dev\compiler\bin\include\fixes.inc:10099)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CConnection::Execute(query=0x74ef78, this=0x4a00020, connection=0x72d6e8)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CQuery::Execute(this=0x74ef78, connection=0x72d6e8)
+[Wed Sep 16 03:39:05 2020] [INFO] query "INSERT INTO `users` (`password`, `username`) VALUES ('9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', 'zile42O')" successfully executed within 2.53 milliseconds
+[Wed Sep 16 03:39:05 2020] [DEBUG] CResultSet::Create(connection=0x72d6e8, query_str='INSERT INTO `users` (`password`, `username`) VALUES ('9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', 'zile42O')')
+[Wed Sep 16 03:39:05 2020] [DEBUG] created new resultset '0x74e8f0'
+[Wed Sep 16 03:39:05 2020] [DEBUG] fetched MySQL result '0x0'
+[Wed Sep 16 03:39:05 2020] [DEBUG] CCallback::Execute(amx=0x33e25b8, index=129, num_params=1)
+[Wed Sep 16 03:39:05 2020] [INFO] Executing callback 'sql_OnAccountCreate' with 1 parameter...
+[Wed Sep 16 03:39:05 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:39:05 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:39:05 2020] [DEBUG] executing AMX callback with index '129'
+[Wed Sep 16 03:39:05 2020] [DEBUG] cache_insert_id() (modules/account/dbfunctions.pwn:46)
+[Wed Sep 16 03:39:05 2020] [DEBUG] cache_insert_id: return value: '1' (modules/account/dbfunctions.pwn:46)
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_format(1, 0x047BDC30, 512, "UPDATE `users` SET %s WHERE `username`='%s'") (modules/account/dbfunctions.pwn:13 -> modules/account/functions.pwn:41)
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_format: return value: '204' (modules/account/dbfunctions.pwn:13 -> modules/account/functions.pwn:41)
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_query(1, "UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'", 1) (modules/account/dbfunctions.pwn:14 -> modules/account/functions.pwn:41)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CHandle::Execute(this=0x71e118, type=3, query=0x755dc0)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CConnection::Execute(query=0x755dc0, this=0x68dbb8, connection=0x722c18)
+[Wed Sep 16 03:39:05 2020] [DEBUG] CQuery::Execute(this=0x755dc0, connection=0x722c18)
+[Wed Sep 16 03:39:05 2020] [INFO] query "UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'" successfully executed within 3.143 milliseconds
+[Wed Sep 16 03:39:05 2020] [DEBUG] CResultSet::Create(connection=0x722c18, query_str='UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'')
+[Wed Sep 16 03:39:05 2020] [DEBUG] created new resultset '0x755810'
+[Wed Sep 16 03:39:05 2020] [DEBUG] fetched MySQL result '0x0'
+[Wed Sep 16 03:39:05 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:39:05 2020] [DEBUG] mysql_query: return value: '1' (modules/account/dbfunctions.pwn:14 -> modules/account/functions.pwn:41)
+[Wed Sep 16 03:39:05 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:39:05 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:41:17 2020] [WARNING] mysql_connect_file: no password specified (modules/mysql/connect.pwn:5 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:41:17 2020] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[Wed Sep 16 03:41:17 2020] [DEBUG] mysql_errno(1) (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:41:17 2020] [DEBUG] CHandle::GetErrorId(this=0x8fbcd0)
+[Wed Sep 16 03:41:17 2020] [DEBUG] CConnection::GetError(this=0x86dfb8, connection=0x901a38)
+[Wed Sep 16 03:41:17 2020] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[Wed Sep 16 03:41:17 2020] [DEBUG] mysql_errno: return value: '0' (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format(1, 0x047DE26C, 128, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format: return value: '48' (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_OnPlayerAccountExists", "i") (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_OnPlayerAccountExists', format='i', params=0x47de254, param_offset=5)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create - callback index for 'sql_OnPlayerAccountExists': 130
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:41:29 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback 'sql_OnPlayerAccountExists' set up for delayed execution.
+[Wed Sep 16 03:41:29 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute(this=0x8fbcd0, type=1, query=0x908d70)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CConnection::Execute(query=0x908d70, this=0x4a29020, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CQuery::Execute(this=0x908d70, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.830 milliseconds
+[Wed Sep 16 03:41:29 2020] [DEBUG] CResultSet::Create(connection=0x90c508, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:41:29 2020] [DEBUG] created new resultset '0x8ff838'
+[Wed Sep 16 03:41:29 2020] [DEBUG] fetched MySQL result '0x86b260'
+[Wed Sep 16 03:41:29 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=130, num_params=1)
+[Wed Sep 16 03:41:29 2020] [INFO] Executing callback 'sql_OnPlayerAccountExists' with 1 parameter...
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:41:29 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:41:29 2020] [DEBUG] executing AMX callback with index '130'
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_row_count(0x047DE674) (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format(1, 0x047DE3E4, 164, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_LoadPlayerData", "i") (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_LoadPlayerData', format='i', params=0x47de3cc, param_offset=5)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create - callback index for 'sql_LoadPlayerData': 128
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:41:29 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback 'sql_LoadPlayerData' set up for delayed execution.
+[Wed Sep 16 03:41:29 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute(this=0x8fbcd0, type=1, query=0x92d790)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:41:29 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:41:29 2020] [DEBUG] CConnection::Execute(query=0x92d790, this=0x4a29020, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CQuery::Execute(this=0x92d790, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.577 milliseconds
+[Wed Sep 16 03:41:29 2020] [DEBUG] CResultSet::Create(connection=0x90c508, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:41:29 2020] [DEBUG] created new resultset '0x8ff838'
+[Wed Sep 16 03:41:29 2020] [DEBUG] fetched MySQL result '0x86af90'
+[Wed Sep 16 03:41:29 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=128, num_params=1)
+[Wed Sep 16 03:41:29 2020] [INFO] Executing callback 'sql_LoadPlayerData' with 1 parameter...
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:41:29 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:41:29 2020] [DEBUG] executing AMX callback with index '128'
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int(0, "ID", 0x047BD9B4) (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: assigned value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name(0, "password", 0x047BD9B8, 256) (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name: assigned value: '9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int(0, "skin", 0x047BDDBC) (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: assigned value: '229' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int(0, "level", 0x047BDDC0) (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int(0, "play time", 0x047BDDB8) (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name(0, "lastIP", 0x047BDDC4, 16) (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name: assigned value: '' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format(1, 0x047DE358, 200, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_IsPlayerRegistered", "i") (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_IsPlayerRegistered', format='i', params=0x47de340, param_offset=5)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Create - callback index for 'sql_IsPlayerRegistered': 127
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:41:29 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback 'sql_IsPlayerRegistered' set up for delayed execution.
+[Wed Sep 16 03:41:29 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute(this=0x8fbcd0, type=1, query=0x908d70)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:41:29 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:41:29 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:41:29 2020] [DEBUG] CConnection::Execute(query=0x908d70, this=0x4a29020, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [DEBUG] CQuery::Execute(this=0x908d70, connection=0x90c508)
+[Wed Sep 16 03:41:29 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.468 milliseconds
+[Wed Sep 16 03:41:29 2020] [DEBUG] CResultSet::Create(connection=0x90c508, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:41:29 2020] [DEBUG] created new resultset '0x930bf8'
+[Wed Sep 16 03:41:29 2020] [DEBUG] fetched MySQL result '0x9312d8'
+[Wed Sep 16 03:41:29 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:41:29 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=127, num_params=1)
+[Wed Sep 16 03:41:29 2020] [INFO] Executing callback 'sql_IsPlayerRegistered' with 1 parameter...
+[Wed Sep 16 03:41:29 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:41:29 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:41:29 2020] [DEBUG] executing AMX callback with index '127'
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_row_count(0x047DE674) (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:41:29 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:41:29 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:41:29 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:44:25 2020] [WARNING] mysql_connect_file: no password specified (modules/mysql/connect.pwn:5 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:44:25 2020] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[Wed Sep 16 03:44:25 2020] [DEBUG] mysql_errno(1) (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:44:25 2020] [DEBUG] CHandle::GetErrorId(this=0x74cad8)
+[Wed Sep 16 03:44:25 2020] [DEBUG] CConnection::GetError(this=0x6be538, connection=0x751a38)
+[Wed Sep 16 03:44:25 2020] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[Wed Sep 16 03:44:25 2020] [DEBUG] mysql_errno: return value: '0' (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format(1, 0x047D328C, 128, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format: return value: '48' (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_OnPlayerAccountExists", "i") (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_OnPlayerAccountExists', format='i', params=0x47d3274, param_offset=5)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create - callback index for 'sql_OnPlayerAccountExists': 130
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:44:38 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:44:38 2020] [INFO] Callback 'sql_OnPlayerAccountExists' set up for delayed execution.
+[Wed Sep 16 03:44:38 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute(this=0x74cad8, type=1, query=0x724318)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CConnection::Execute(query=0x724318, this=0x4a23020, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CQuery::Execute(this=0x724318, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.696 milliseconds
+[Wed Sep 16 03:44:38 2020] [DEBUG] CResultSet::Create(connection=0x75c588, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:44:38 2020] [DEBUG] created new resultset '0x74f918'
+[Wed Sep 16 03:44:38 2020] [DEBUG] fetched MySQL result '0x6bb350'
+[Wed Sep 16 03:44:38 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=130, num_params=1)
+[Wed Sep 16 03:44:38 2020] [INFO] Executing callback 'sql_OnPlayerAccountExists' with 1 parameter...
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:44:38 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:44:38 2020] [DEBUG] executing AMX callback with index '130'
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_row_count(0x047D3694) (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format(1, 0x047D3404, 164, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_LoadPlayerData", "i") (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_LoadPlayerData', format='i', params=0x47d33ec, param_offset=5)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create - callback index for 'sql_LoadPlayerData': 128
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:44:38 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:44:38 2020] [INFO] Callback 'sql_LoadPlayerData' set up for delayed execution.
+[Wed Sep 16 03:44:38 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute(this=0x74cad8, type=1, query=0x78a3a0)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CConnection::Execute(query=0x78a3a0, this=0x4a23020, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:44:38 2020] [DEBUG] CQuery::Execute(this=0x78a3a0, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:44:38 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.448 milliseconds
+[Wed Sep 16 03:44:38 2020] [DEBUG] CResultSet::Create(connection=0x75c588, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:44:38 2020] [DEBUG] created new resultset '0x74f678'
+[Wed Sep 16 03:44:38 2020] [DEBUG] fetched MySQL result '0x6bb1e8'
+[Wed Sep 16 03:44:38 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=128, num_params=1)
+[Wed Sep 16 03:44:38 2020] [INFO] Executing callback 'sql_LoadPlayerData' with 1 parameter...
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:44:38 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:44:38 2020] [DEBUG] executing AMX callback with index '128'
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int(0, "ID", 0x047B29D4) (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: assigned value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name(0, "password", 0x047B29D8, 256) (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name: assigned value: '9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int(0, "skin", 0x047B2DDC) (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: assigned value: '229' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int(0, "level", 0x047B2DE0) (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int(0, "play time", 0x047B2DD8) (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name(0, "lastIP", 0x047B2DE4, 16) (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name: assigned value: '' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format(1, 0x047D3378, 200, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_IsPlayerRegistered", "i") (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create(amx=0x34325b8, name='sql_IsPlayerRegistered', format='i', params=0x47d3360, param_offset=5)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Create - callback index for 'sql_IsPlayerRegistered': 127
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:44:38 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:44:38 2020] [INFO] Callback 'sql_IsPlayerRegistered' set up for delayed execution.
+[Wed Sep 16 03:44:38 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute(this=0x74cad8, type=1, query=0x724318)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:44:38 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:44:38 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:44:38 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:44:38 2020] [DEBUG] CConnection::Execute(query=0x724318, this=0x4a23020, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [DEBUG] CQuery::Execute(this=0x724318, connection=0x75c588)
+[Wed Sep 16 03:44:38 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.500 milliseconds
+[Wed Sep 16 03:44:38 2020] [DEBUG] CResultSet::Create(connection=0x75c588, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:44:38 2020] [DEBUG] created new resultset '0x781020'
+[Wed Sep 16 03:44:38 2020] [DEBUG] fetched MySQL result '0x7823e8'
+[Wed Sep 16 03:44:38 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:44:38 2020] [DEBUG] CCallback::Execute(amx=0x34325b8, index=127, num_params=1)
+[Wed Sep 16 03:44:38 2020] [INFO] Executing callback 'sql_IsPlayerRegistered' with 1 parameter...
+[Wed Sep 16 03:44:38 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:44:38 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:44:38 2020] [DEBUG] executing AMX callback with index '127'
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_row_count(0x047D3694) (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:44:38 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:44:38 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:44:38 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:48:59 2020] [WARNING] mysql_connect_file: no password specified (modules/mysql/connect.pwn:5 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:48:59 2020] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[Wed Sep 16 03:48:59 2020] [DEBUG] mysql_errno(1) (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:48:59 2020] [DEBUG] CHandle::GetErrorId(this=0x7dcea8)
+[Wed Sep 16 03:48:59 2020] [DEBUG] CConnection::GetError(this=0x74db88, connection=0x7e1b68)
+[Wed Sep 16 03:48:59 2020] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[Wed Sep 16 03:48:59 2020] [DEBUG] mysql_errno: return value: '0' (modules/mysql/connect.pwn:7 -> modules/server/maps.pwn:190 -> modules/server/config.pwn:97 -> E:\SAMP dev\compiler\bin\include\pawn.cmd.inc:127 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:211 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2148 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6036)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format(1, 0x047F928C, 128, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format: return value: '48' (modules/account/hook.pwn:37 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_OnPlayerAccountExists", "i") (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create(amx=0x34625b8, name='sql_OnPlayerAccountExists', format='i', params=0x47f9274, param_offset=5)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create - callback index for 'sql_OnPlayerAccountExists': 130
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:49:26 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback 'sql_OnPlayerAccountExists' set up for delayed execution.
+[Wed Sep 16 03:49:26 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute(this=0x7dcea8, type=1, query=0x7e8ea0)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/hook.pwn:38 -> E:\SAMP dev\compiler\bin\include\scope-fix.inc:176 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:242 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2247 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6490)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CConnection::Execute(query=0x7e8ea0, this=0x4a0e020, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CQuery::Execute(this=0x7e8ea0, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.852 milliseconds
+[Wed Sep 16 03:49:26 2020] [DEBUG] CResultSet::Create(connection=0x7ec638, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:49:26 2020] [DEBUG] created new resultset '0x7dfa48'
+[Wed Sep 16 03:49:26 2020] [DEBUG] fetched MySQL result '0x74b360'
+[Wed Sep 16 03:49:26 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Execute(amx=0x34625b8, index=130, num_params=1)
+[Wed Sep 16 03:49:26 2020] [INFO] Executing callback 'sql_OnPlayerAccountExists' with 1 parameter...
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:49:26 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:49:26 2020] [DEBUG] executing AMX callback with index '130'
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_row_count(0x047F9694) (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:23)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format(1, 0x047F9404, 164, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:30)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_LoadPlayerData", "i") (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create(amx=0x34625b8, name='sql_LoadPlayerData', format='i', params=0x47f93ec, param_offset=5)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create - callback index for 'sql_LoadPlayerData': 128
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:49:26 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback 'sql_LoadPlayerData' set up for delayed execution.
+[Wed Sep 16 03:49:26 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute(this=0x7dcea8, type=1, query=0x80d8c0)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:31)
+[Wed Sep 16 03:49:26 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:49:26 2020] [DEBUG] CConnection::Execute(query=0x80d8c0, this=0x4a0e020, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CQuery::Execute(this=0x80d8c0, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.492 milliseconds
+[Wed Sep 16 03:49:26 2020] [DEBUG] CResultSet::Create(connection=0x7ec638, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:49:26 2020] [DEBUG] created new resultset '0x7df498'
+[Wed Sep 16 03:49:26 2020] [DEBUG] fetched MySQL result '0x74b4c8'
+[Wed Sep 16 03:49:26 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Execute(amx=0x34625b8, index=128, num_params=1)
+[Wed Sep 16 03:49:26 2020] [INFO] Executing callback 'sql_LoadPlayerData' with 1 parameter...
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:49:26 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:49:26 2020] [DEBUG] executing AMX callback with index '128'
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int(0, "ID", 0x047D89D4) (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: assigned value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:60)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name(0, "password", 0x047D89D8, 256) (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name: assigned value: '9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:61)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int(0, "skin", 0x047D8DDC) (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: assigned value: '229' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:62)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int(0, "level", 0x047D8DE0) (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:63)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int(0, "play time", 0x047D8DD8) (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: assigned value: '-1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name_int: return value: '1' (modules/account/dbfunctions.pwn:64)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name(0, "lastIP", 0x047D8DE4, 16) (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name: assigned value: '' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_value_name: return value: '1' (modules/account/dbfunctions.pwn:65)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format(1, 0x047F9378, 200, "SELECT * FROM `users` WHERE `username`='%s'") (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_format: return value: '48' (modules/account/dbfunctions.pwn:66)
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `username`='zile42O'", "sql_IsPlayerRegistered", "i") (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create(amx=0x34625b8, name='sql_IsPlayerRegistered', format='i', params=0x47f9360, param_offset=5)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Create - callback index for 'sql_IsPlayerRegistered': 127
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing specifier 'i' with parameter index 0
+[Wed Sep 16 03:49:26 2020] [DEBUG] retrieved and pushed value '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback 'sql_IsPlayerRegistered' set up for delayed execution.
+[Wed Sep 16 03:49:26 2020] [DEBUG] created delayed callback with 1 parameter
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute(this=0x7dcea8, type=1, query=0x7e8ea0)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:49:26 2020] [DEBUG] mysql_tquery: return value: '1' (modules/account/dbfunctions.pwn:67)
+[Wed Sep 16 03:49:26 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:49:26 2020] [DEBUG] CConnection::Execute(query=0x7e8ea0, this=0x4a0e020, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [DEBUG] CQuery::Execute(this=0x7e8ea0, connection=0x7ec638)
+[Wed Sep 16 03:49:26 2020] [INFO] query "SELECT * FROM `users` WHERE `username`='zile42O'" successfully executed within 0.526 milliseconds
+[Wed Sep 16 03:49:26 2020] [DEBUG] CResultSet::Create(connection=0x7ec638, query_str='SELECT * FROM `users` WHERE `username`='zile42O'')
+[Wed Sep 16 03:49:26 2020] [DEBUG] created new resultset '0x80deb0'
+[Wed Sep 16 03:49:26 2020] [DEBUG] fetched MySQL result '0x816938'
+[Wed Sep 16 03:49:26 2020] [DEBUG] allocated 148 bytes for PAWN result
+[Wed Sep 16 03:49:26 2020] [DEBUG] CCallback::Execute(amx=0x34625b8, index=127, num_params=1)
+[Wed Sep 16 03:49:26 2020] [INFO] Executing callback 'sql_IsPlayerRegistered' with 1 parameter...
+[Wed Sep 16 03:49:26 2020] [DEBUG] processing internal specifier 'c'
+[Wed Sep 16 03:49:26 2020] [DEBUG] pushed value '0' onto AMX stack
+[Wed Sep 16 03:49:26 2020] [DEBUG] executing AMX callback with index '127'
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_row_count(0x047F9694) (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:49:26 2020] [DEBUG] cache_get_row_count: return value: '1' (modules/account/dbfunctions.pwn:74)
+[Wed Sep 16 03:49:26 2020] [DEBUG] AMX callback executed with error '0'
+[Wed Sep 16 03:49:26 2020] [INFO] Callback successfully executed.
+[Wed Sep 16 03:49:40 2020] [DEBUG] mysql_format(1, 0x047F8E44, 512, "UPDATE `users` SET %s WHERE `username`='%s'") (modules/account/dbfunctions.pwn:14 -> modules/account/hook.pwn:45 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:266 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2255 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6521)
+[Wed Sep 16 03:49:40 2020] [DEBUG] mysql_format: return value: '226' (modules/account/dbfunctions.pwn:14 -> modules/account/hook.pwn:45 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:266 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2255 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6521)
+[Wed Sep 16 03:49:40 2020] [DEBUG] mysql_query(1, "UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastIP`='127.0.0.1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'", 1) (modules/account/dbfunctions.pwn:15 -> modules/account/hook.pwn:45 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:266 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2255 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6521)
+[Wed Sep 16 03:49:40 2020] [DEBUG] CHandle::Execute(this=0x7dcea8, type=3, query=0x7b3438)
+[Wed Sep 16 03:49:40 2020] [DEBUG] CConnection::Execute(query=0x7b3438, this=0x74db88, connection=0x7e1b68)
+[Wed Sep 16 03:49:40 2020] [DEBUG] CQuery::Execute(this=0x7b3438, connection=0x7e1b68)
+[Wed Sep 16 03:49:40 2020] [INFO] query "UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastIP`='127.0.0.1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'" successfully executed within 2.144 milliseconds
+[Wed Sep 16 03:49:40 2020] [DEBUG] CResultSet::Create(connection=0x7e1b68, query_str='UPDATE `users` SET `password`='9E84F421441703D7439EAAE4897C1406F42AA405F397A6F9F0010431289000A8', `skin`='229', `play time`='-1', `level`='-1', `lastIP`='127.0.0.1', `lastOnline`= CURRENT_TIMESTAMP() WHERE `username`='zile42O'')
+[Wed Sep 16 03:49:40 2020] [DEBUG] created new resultset '0x818f18'
+[Wed Sep 16 03:49:40 2020] [DEBUG] fetched MySQL result '0x0'
+[Wed Sep 16 03:49:40 2020] [DEBUG] CHandle::Execute - return value: true
+[Wed Sep 16 03:49:40 2020] [DEBUG] mysql_query: return value: '1' (modules/account/dbfunctions.pwn:15 -> modules/account/hook.pwn:45 -> E:\SAMP dev\compiler\bin\include\sscanf2.inc:266 -> E:\SAMP dev\compiler\bin\include\weapon-config.inc:2255 -> E:\SAMP dev\compiler\bin\include\fixes.inc:6521)

@@ -20,7 +20,7 @@
 #define				FIXES_Debug 0
 #define				FIXES_ServerVarMsg 0
 #undef				MAX_PLAYERS
-#define				MAX_PLAYERS 480
+#define				MAX_PLAYERS 100
 #include			<fixes>
 #include			<weapon-config>
 
@@ -48,7 +48,8 @@
 #include			<sscanf2>
 #include			<colandreas>
 #include			<pawn.cmd>
-#include			<scope-fix> 
+#include			<scope-fix>
+#include			<dcenter> //Ino
 /* 
 	Modules
 */
@@ -56,7 +57,7 @@
 main()
 {		
 	print("_______________________________________________________________\n\n");
-	print("\tName: 42O dayZ");
+	print("\tName: 42O Deathmatch");
 	print("\tVersion: 1.0");
 	print("\tAuthor: zile42O\n\n");
 	print("_______________________________________________________________");
